@@ -1,19 +1,15 @@
 ---
 import { Image } from "astro:assets"
 import logo from "../assets/logo.svg"
-import logoDark from "../assets/logo-dark.svg"
 ---
 
 <footer>
   <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
     <!-- Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center">
-      <div class="flex items-center justify-center gap-1 font-semibold dark:text-white text-2xl">
-        <a href="/" class="dark:hidden flex-shrink-0" aria-label="Brand">
+      <div class="flex items-center justify-center gap-1 font-semibold text-2xl">
+        <a href="/" class="flex-shrink-0" aria-label="Brand">
           <Image src={logo} width={40} height={40} alt="Logo" />
-        </a>
-        <a href="/" class="hidden dark:block flex-shrink-0" aria-label="Brand">
-          <Image src={logoDark} width={40} height={40} alt="Logo" />
         </a>
         <p class="text-base sm:text-lg md:text-xl">Joyful Mind TMS</p>
       </div>
@@ -21,19 +17,19 @@ import logoDark from "../assets/logo-dark.svg"
 
       <ul class="text-center">
         <li
-          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600"
+          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300"
         >
-          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200" href="#"> About</a>
+          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800" href="#"> About</a>
         </li>
         <li
-          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600"
+          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300"
         >
-          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200" href="#"> Services</a>
+          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800" href="#"> Services</a>
         </li>
         <li
-          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300 dark:before:text-gray-600"
+          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300"
         >
-          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800 dark:text-gray-500 dark:hover:text-gray-200" href="#"> Contact</a>
+          <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800" href="#"> Contact</a>
         </li>
       </ul>
       <!-- End Col -->
@@ -41,7 +37,7 @@ import logoDark from "../assets/logo-dark.svg"
       <!-- Social Brands -->
       <div class="md:text-center space-x-2">
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
+          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
           href="#"
         >
           <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -51,7 +47,7 @@ import logoDark from "../assets/logo-dark.svg"
           </svg>
         </a>
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
+          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
           href="#"
         >
           <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -61,7 +57,7 @@ import logoDark from "../assets/logo-dark.svg"
           </svg>
         </a>
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
+          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
           href="#"
         >
           <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
@@ -71,7 +67,7 @@ import logoDark from "../assets/logo-dark.svg"
           </svg>
         </a>
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition dark:text-gray-500 dark:hover:text-gray-200 dark:hover:bg-gray-800 dark:focus:ring-offset-slate-900"
+          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
           href="#"
         >
           <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
