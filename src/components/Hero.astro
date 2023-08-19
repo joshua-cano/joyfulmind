@@ -1,0 +1,38 @@
+---
+import heroImage from '../assets/HeroImage.png';
+import { Image } from 'astro:assets';
+---
+
+<!-- Hero -->
+<div class="max-w-[85rem] mx-auto px-4 sm:-6 lg:px-8">
+  <!-- Grid -->
+  <div class="grid lg:grid-cols-7 lg:gap-x-8 xl:gap-x-12 lg:items-center">
+    <div class="lg:col-span-3">
+      <!-- <p class="mb-8">Over 25 Years of Expertise in Mental Health</p> -->
+      <h1 class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:text-7xl dark:text-white">Your health is our priority.</h1>
+      <p class="mt-4 text-slate-500">Bringing light to your darkest days. Expert TMS therapy and psychiatric care, handcrafted for every age and journey.</p>
+      <!-- <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">Your Health Is Our Priority</p> -->
+      <div class="mt-7 grid gap-3 w-full sm:inline-flex">
+        <a class="inline-flex justify-center items-center gap-x-3 text-center bg-sky-600 hover:bg-sky-700 border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800" href="#">
+          Free Consultation
+          <svg class="w-2.5 h-2.5" width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <path d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+        </a>
+        <!-- <a class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800" href="#">
+          Contact sales team
+        </a> -->
+      </div>
+    </div>
+    <!-- End Col -->
+
+    <div class="lg:col-span-4 mt-10 lg:mt-0">
+      <!-- <img class="w-full rounded-xl" src="https://media.discordapp.net/attachments/1072899954525356072/1141433045199630397/natt111990_green_toned_image_of_calm_and_happy_woman_in_curitib_64293973-bdc7-4293-92e3-6f16857313e1.png?width=2760&height=1840" alt="Image Description"> -->
+      <!-- <img class="w-full rounded-lg aspect-[11/9] object-top object-cover" alt="Image Description" width="500" height="600" src="https://media.discordapp.net/attachments/976997386436104202/1126402147232268378/LosPublicistas_a_photograph_young_woman_joy_pink_and_purple_pal_116f3334-8008-4b33-8d72-0d18b11c075a.png?width=1840&height=1840"> -->
+      <Image src={heroImage} loading='eager' alt="Hero Image" class="aspect-[11/9] object-cover rounded-lg"  />
+    </div>
+    <!-- End Col -->
+  </div>
+  <!-- End Grid -->
+</div>
+<!-- End Hero -->
