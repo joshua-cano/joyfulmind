@@ -1,6 +1,7 @@
 ---
 import { Image } from "astro:assets"
-import logo from "../assets/logo.png"
+import logo from "../assets/logo.svg"
+import logoDark from "../assets/logo-dark.svg"
 ---
 
 <header
@@ -8,11 +9,14 @@ import logo from "../assets/logo.png"
 >
   <nav class="relative max-w-[85rem] w-full mx-auto px-4 sm:-6 lg:px-8 sm:flex sm:items-center mr-auto" aria-label="Global">
     <div class="flex items-center justify-between">
-      <div class="flex items-center gap-2 font-semibold dark:text-white text-2xl">
-        <a href="/" class="flex-shrink-0" aria-label="Brand">
-          <Image src={logo} width={50} height={50} alt="Logo" />
+      <div class="flex items-center gap-1 font-semibold dark:text-white text-2xl">
+        <a href="/" class="dark:hidden flex-shrink-0" aria-label="Brand">
+          <Image src={logo} width={40} height={40} alt="Logo" />
         </a>
-        <p class="hidden md:block">Joyful Mind TMS</p>
+        <a href="/" class="hidden dark:block flex-shrink-0" aria-label="Brand">
+          <Image src={logoDark} width={40} height={40} alt="Logo" />
+        </a>
+        <p class="text-base sm:text-lg md:text-xl">Joyful Mind TMS</p>
       </div>
       <div class="sm:hidden">
         <button

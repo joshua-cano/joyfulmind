@@ -1,9 +1,21 @@
+---
+import { Image } from "astro:assets"
+import logo from "../assets/logo.svg"
+import logoDark from "../assets/logo-dark.svg"
+---
+
 <footer>
   <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
     <!-- Grid -->
     <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center">
-      <div>
-        <a class="flex-none text-xl font-semibold text-black dark:text-white" href="#" aria-label="Brand">JoyFul Mind TMS of Texas</a>
+      <div class="flex items-center justify-center gap-1 font-semibold dark:text-white text-2xl">
+        <a href="/" class="dark:hidden flex-shrink-0" aria-label="Brand">
+          <Image src={logo} width={40} height={40} alt="Logo" />
+        </a>
+        <a href="/" class="hidden dark:block flex-shrink-0" aria-label="Brand">
+          <Image src={logoDark} width={40} height={40} alt="Logo" />
+        </a>
+        <p class="text-base sm:text-lg md:text-xl">Joyful Mind TMS</p>
       </div>
       <!-- End Col -->
 
