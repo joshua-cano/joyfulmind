@@ -5,7 +5,145 @@ import building from "../assets/building.jpeg";
 ---
 
 <Layout title="Contact Us">
+  <!-- Contact Us -->
   <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-    <Image src={building} alt="building" />
+    <div class="max-w-2xl lg:max-w-6xl mx-auto">
+      <div class="text-center">
+        <h1 class="text-3xl font-bold text-gray-800 sm:text-5xl">Contact us</h1>
+        <p class="mt-1 text-gray-600 text-lg">We'd love to talk about how we can help you.</p>
+      </div>
+
+      <div class="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
+        <Image src={building} alt="building" loading="eager" class="aspect-[2/2.5] object-cover" />
+
+        <div class="divide-y divide-gray-200">
+          <!-- Icon Block -->
+          <div class="flex gap-x-7 py-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 flex-shrink-0 mt-1.5 text-gray-800"
+              width="16"
+              height="16"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              ></path>
+            </svg>
+
+            <div>
+              <h3 class="font-semibold text-gray-800">Visit Us</h3>
+              <p class="mt-1 text-sm text-gray-500">We're here to help with any questions</p>
+              <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800" href="#">
+                1000 Gattis School Rd, Round Rock, Texas 78664
+              </a>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <!-- Icon Block -->
+          <div class="flex gap-x-7 py-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 flex-shrink-0 mt-1.5 text-gray-800"
+              width="16"
+              height="16"
+            >
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+
+            <div>
+              <h3 class="font-semibold text-gray-800">Hours</h3>
+              <p class="mt-1 text-sm text-gray-500">Mon - Fri: 8am - 5pm</p>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <!-- Icon Block -->
+          <div class="flex gap-x-7 py-6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 flex-shrink-0 mt-1.5 text-gray-800"
+              width="16"
+              height="16"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"
+              ></path>
+            </svg>
+
+            <div>
+              <h3 class="font-semibold text-gray-800">Call Us</h3>
+              <p class="mt-1 text-sm text-gray-500">Free Consultation</p>
+              <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800" href="#">
+                (737) 340-0928
+                <svg
+                  class="w-2.5 h-2.5 transition ease-in-out group-hover:translate-x-1"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0.975821 6.92249C0.43689 6.92249 -3.50468e-07 7.34222 -3.27835e-07 7.85999C-3.05203e-07 8.37775 0.43689 8.79749 0.975821 8.79749L12.7694 8.79748L7.60447 13.7596C7.22339 14.1257 7.22339 14.7193 7.60447 15.0854C7.98555 15.4515 8.60341 15.4515 8.98449 15.0854L15.6427 8.68862C16.1191 8.23098 16.1191 7.48899 15.6427 7.03134L8.98449 0.634573C8.60341 0.268455 7.98555 0.268456 7.60447 0.634573C7.22339 1.00069 7.22339 1.59428 7.60447 1.9604L12.7694 6.92248L0.975821 6.92249Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+
+          <!-- Icon Block -->
+          <div class="flex gap-x-7 py-6">
+            <svg
+              class="flex-shrink-0 w-6 h-6 mt-1.5 text-gray-800"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+              ></path>
+            </svg>
+            <div>
+              <h3 class="font-semibold text-gray-800">Contact us by email</h3>
+              <p class="mt-1 text-sm text-gray-500">If you wish to write us an email instead please use</p>
+              <a class="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800" href="#"> joyfulmindtms@outlook.com</a>
+            </div>
+          </div>
+          <!-- End Icon Block -->
+        </div>
+      </div>
+    </div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.4657302453685!2d-97.66734292944803!3d30.49662964750752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d1dac687091b%3A0x48137547a52f4d8!2s1000%20Gattis%20School%20Rd%2C%20Round%20Rock%2C%20TX%2078664!5e0!3m2!1sen!2sus!4v1694714681399!5m2!1sen!2sus"
+      width="600"
+      height="450"
+      style="border:0;"
+      class="w-full mt-16"
+      allowfullscreen=""
+      loading="eager"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
+  <!-- End Contact Us -->
 </Layout>
