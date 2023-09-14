@@ -1,0 +1,75 @@
+---
+import Layout from "../layouts/Layout.astro";
+import gad from "../assets/gad.jpg";
+import roxana from "../assets/roxana.jpg";
+import { Image } from "astro:assets";
+---
+
+<Layout title="About">
+  <!-- Testimonials -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
+      <div class="mb-6 md:mb-0">
+        <Image class="rounded-xl" src={gad} alt="Image Description" />
+      </div>
+
+      <div>
+        <!-- Blockquote -->
+        <div class="relative">
+          <div class="relative z-10">
+            <div class="mb-4">
+              <div class="text-3xl font-semibold text-gray-800">Dr. Gadalla Makar MD.</div>
+              <div class="text-base text-gray-500">Board Certified Child Adolescent & Adult Psychiatrist</div>
+            </div>
+            <p class="text-lg font-normal text-gray-600 md:text-lg md:leading-relaxed xl:text-lg xl:leading-relaxed">
+              Dr: Gadalla Makar is a double boarded psychiatrist; he is boarded in Child and adolescent & Adult psychiatry. In addition he has extensive
+              experience in consultation and Liaison for medical illnessess. He has a great clinical and academic experience including international medical
+              accomplishments (Egypt, United kingdom). He is passionate about helping others to reach their maximal potential and to fully embrace life. Dr.
+              Makar has an especial interest in providing treatments with non-invasive , FDI approved, medication free treatment that safely and effectively
+              alleviates symptoms of depression, OCD and smoke cessation called TMS therapy (Trans cranial Magnetic stimulation). His goal it is to help
+              patients to rediscover joy and embrace life once more. Dr. Makar is fluent in English, Arabic, and medical Spanish.
+            </p>
+          </div>
+        </div>
+        <!-- End Blockquote -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Testimonials -->
+  <!-- Testimonials -->
+  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <!-- Grid -->
+    <div class="md:grid md:grid-cols-2 md:gap-10 lg:gap-16 md:items-center">
+      <div class="mb-6 md:mb-0">
+        <Image class="rounded-xl aspect-[1/1]" src={roxana} alt="Image Description" />
+      </div>
+
+      <div>
+        <!-- Blockquote -->
+        <div class="relative">
+          <div class="relative z-10">
+            <div class="mb-4">
+              <div class="text-3xl font-semibold text-gray-800">Dr. Roxana Ruizcaro MD.</div>
+              <div class="text-base text-gray-500">Board Certified Adult Psychiatrist</div>
+            </div>
+            <p class="text-lg font-normal text-gray-600 md:text-lg md:leading-relaxed xl:text-lg xl:leading-relaxed">
+              Dr. Ruizcaro is a Board Certified Psychiatrist with more than 25 years of clinical experience in treating a wider gamut of psychiatric conditions
+              with special interest in depression, anxiety, PTSD, OCD and mood disorders. Dr. Ruizcaro is very knowledgeable, personable, a good listener, very
+              committed with a great sense of humanity and a deep understanding of people's emotional and mental challenges. She acknowledges that every one
+              comes from different paths of life. In addition, she has dedicated significant time of her life to help people in undeserved countries as a
+              Christian missionary doctor and in the USA she has focused in helping mostly minorities. Dr. Ruizcaro enjoys implementing novel treatments
+              including holistic approaches and TMS related treatments. She is fluent in Spanish, English, and some Portuguese.
+            </p>
+          </div>
+        </div>
+        <!-- End Blockquote -->
+      </div>
+      <!-- End Col -->
+    </div>
+    <!-- End Grid -->
+  </div>
+  <!-- End Testimonials -->
+</Layout>
