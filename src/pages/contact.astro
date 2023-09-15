@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { Image } from "astro:assets";
-import building from "../assets/building.jpeg";
+import building from "../assets/building.jpg";
 ---
 
 <Layout title="Contact Us">
@@ -14,7 +14,7 @@ import building from "../assets/building.jpeg";
       </div>
 
       <div class="mt-12 grid items-center lg:grid-cols-2 gap-6 lg:gap-16">
-        <Image src={building} alt="building" loading="eager" class="aspect-[2/2.5] object-cover" />
+        <Image src={building} alt="building" loading="eager" class="aspect-square object-cover" />
 
         <div class="divide-y divide-gray-200">
           <!-- Icon Block -->
@@ -63,7 +63,7 @@ import building from "../assets/building.jpeg";
 
             <div>
               <h3 class="font-semibold text-gray-800">Hours</h3>
-              <p class="mt-1 text-sm text-gray-500">Mon - Fri: 8am - 5pm</p>
+              <p class="mt-1 text-sm text-gray-500">Mon - Fri: By Appointment</p>
             </div>
           </div>
           <!-- End Icon Block -->
@@ -136,13 +136,13 @@ import building from "../assets/building.jpeg";
       </div>
     </div>
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d859.4657302453685!2d-97.66734292944803!3d30.49662964750752!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d1dac687091b%3A0x48137547a52f4d8!2s1000%20Gattis%20School%20Rd%2C%20Round%20Rock%2C%20TX%2078664!5e0!3m2!1sen!2sus!4v1694714681399!5m2!1sen!2sus"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1755.0436095532687!2d-97.66721364865124!3d30.496994518072647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644d1da97c5f9df%3A0xfbe609b8ece18143!2s1000%20Gattis%20School%20Rd%20Ste%20730%2C%20Round%20Rock%2C%20TX%2078664!5e0!3m2!1sen!2sus!4v1694797685632!5m2!1sen!2sus"
       width="600"
       height="450"
       style="border:0;"
-      class="w-full mt-16"
       allowfullscreen=""
-      loading="eager"
+      class="w-full mt-16"
+      loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"></iframe>
   </div>
   <!-- End Contact Us -->
