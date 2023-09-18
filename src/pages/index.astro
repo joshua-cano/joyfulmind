@@ -6,23 +6,15 @@ import Services from "../components/Services.astro";
 import CardSection from "../components/CardSection.astro";
 import Video from "../components/Video.astro";
 import About from "../components/About.astro";
+import GetStarted from "../components/GetStarted.astro";
 ---
 
-<Layout title="JoyFul Mind TMS Texas">
+<Layout title="TMS Therapy | Joyful Mind TMS - Round Rock, Texas">
   <Hero />
   <About />
   <Video />
   <CardSection />
   <Services />
   <Faq />
-  <div class="relative py-10 px-6 lg:py-16 mx-auto text-center bg-gray-600 text-white">
-    <h2 class="text-3xl sm:text-4xl font-semibold">Ready to get started?</h2>
-    <p class="mt-4">Find out if Joyful Mind TMS can help you or a loved one</p>
-    <a
-      class="mt-6 inline-flex justify-center items-center gap-x-3 text-center border-white border-2 hover:bg-sky-700 text-sm lg:text-base text-white font-medium rounded-full focus:outline-none focus:ring-2 focus:ring-sky-600 focus:ring-offset-2 focus:ring-offset-white transition py-2 px-6"
-      href="/"
-    >
-      Get Started
-    </a>
-  </div>
+  <GetStarted />
 </Layout>

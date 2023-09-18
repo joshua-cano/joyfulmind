@@ -1,8 +1,8 @@
 ---
+import BaseHead from "../components/BaseHead.astro";
 import Banner from "../components/Banner.astro";
 import Navbar from "../components/Navbar.astro";
 import Footer from "../components/Footer.astro";
-import { SEO } from "astro-seo";
 
 interface Props {
   title: string;
@@ -13,17 +13,7 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="description"
-      content="Explore expert TMS Therapy solutions in Round Rock. Offering non-invasive treatments for depression, anxiety, and more. Discover a path to better mental health today!"
-    />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
-  </head>
+  <BaseHead />
   <body class="bg-white">
     <Banner />
     <Navbar />

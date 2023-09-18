@@ -1,44 +1,20 @@
 ---
-export type Props = {
-  title?: string;
-  description?: string;
-  image?: { src: string; alt: string };
-  canonicalURL?: URL | null;
-  pageType?: "website" | "article";
-};
-
-const twitterHandle = "astrodotbuild";
-
-// const { canonicalURL = new URL(Astro.request.url, Astro.site), pageType = "website" } = Astro.props;
-
 const title = Astro.props.title;
 ---
 
-<!-- High Priority Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" />
-<!-- <meta name="generator" content={Astro.generator} /> -->
-<meta name="theme-color" content="#fff" />
-
-<!-- Low Priority Global Metadata -->
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-<link rel="mask-icon" href="/favicon.svg" color="#8D46E7" />
-<link rel="sitemap" href="/sitemap-index.xml" />
-<!-- <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS" /> -->
 
-<!-- Page Metadata -->
-<!-- {canonicalURL && <link rel="canonical" href={formatCanonicalURL(canonicalURL)} />} -->
-<meta
-  name="description"
-  content="Explore expert TMS Therapy solutions in Round Rock. Offering non-invasive treatments for depression, anxiety, and more. Discover a path to better mental health today!"
-/>
+<title>{title}</title>
+<meta name="description" content="Depression disconnects you from life. TMS Therapy from Joyful Mind TMS reconnects you. Office in Round Rock Texas." />
+<link rel="canonical" href="https://joyfulmindtms.com/" />
 
-<!-- OpenGraph Tags -->
-<!-- <meta property="og:title" content={og.title} />
-<meta property="og:type" content={og.type} />
-{og.canonicalURL && <meta property="og:url" content={formatCanonicalURL(og.canonicalURL)} />}
-<meta property="og:locale" content={og.locale} />
-<meta property="og:description" content={og.description} />
-<meta property="og:site_name" content={og.name} />
-{og.image && <meta property="og:image" content={og.image.src} />}
-{og.image && <meta property="og:image:alt" content={og.image.alt} />} -->
+<!-- Open Graph Tags -->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="TMS Therapy | Joyful Mind TMS - Round Rock, Texas" />
+<meta property="og:description" content="Depression disconnects you from life. TMS Therapy from Joyful Mind TMS reconnects you. Office in Round Rock Texas." />
+<meta property="og:url" content="https://joyfulmindtms.com/" />
+<meta property="og:site_name" content="Joyful Mind" />
+<meta property="og:image" content="" />
