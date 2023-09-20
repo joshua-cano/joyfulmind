@@ -15,8 +15,11 @@ const { title } = Astro.props;
 <html lang="en">
   <BaseHead />
   <body class="bg-white">
-    <Banner />
-    <Navbar />
+    <div class="sticky top-0 z-50">
+      <Banner />
+      <Navbar />
+    </div>
+
     <main>
       <slot />
     </main>

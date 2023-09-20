@@ -6,11 +6,11 @@ const url = Astro.url.pathname;
 console.log(url);
 ---
 
-<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white-100 text-sm py-4">
+<header class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white-100 text-sm py-6 bg-white border-b border-gray-200">
   <nav class="max-w-[85rem] w-full mx-auto px-4 sm:px-6 lg:px-8 sm:flex sm:items-center sm:justify-between" aria-label="Global">
     <div class="flex items-center justify-between">
       <a class="inline-flex items-center gap-x-1 text-xl sm:text-2xl font-semibold" href="/">
-        <Image class="w-40 h-auto" src={logo} alt="Logo" />
+        <Image class="w-40 sm:w-44 h-auto" src={logo} alt="Logo" />
       </a>
       <div class="sm:hidden">
         <button
@@ -35,7 +35,7 @@ console.log(url);
       </div>
     </div>
     <div id="navbar-image-and-text-2" class="hs-collapse hidden overflow-hidden transition-all duration-300 grow sm:block">
-      <div class="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5 text-lg">
+      <div class="flex flex-col gap-6 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5 text-lg tracking-wide">
         <a class="font-medium text-gray-700 hover:text-gray-400" href="/" aria-current={url === "/" ? "page" : null}>Home</a>
         <a class="font-medium text-gray-700 hover:text-gray-400" href="/about" aria-current={url === "/about" ? "page" : null}>About</a>
         <a class="font-medium text-gray-700 hover:text-gray-400" href="/services" aria-current={url === "/services" ? "page" : null}>Services</a>
