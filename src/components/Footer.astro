@@ -4,10 +4,10 @@ import logo from "../assets/logo.svg";
 ---
 
 <footer>
-  <div class="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 mx-auto">
+  <div class="mx-auto max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8">
     <!-- Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 items-center gap-5 text-center">
-      <div class="flex items-center justify-center gap-1 font-semibold text-2xl">
+    <div class="grid grid-cols-1 items-center gap-5 text-center md:grid-cols-3">
+      <div class="flex items-center justify-center gap-1 text-2xl font-semibold">
         <a href="/" class="flex-shrink-0" aria-label="Brand">
           <Image class="w-32" src={logo} alt="Logo" />
         </a>
@@ -16,17 +16,17 @@ import logo from "../assets/logo.svg";
 
       <ul class="text-center">
         <li
-          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300"
+          class="relative inline-block pr-8 before:absolute before:right-3 before:top-1/2 before:-translate-y-1/2 before:text-gray-300 before:content-['/'] last:pr-0 last-of-type:before:hidden"
         >
           <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800" href="/about"> About</a>
         </li>
         <li
-          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300"
+          class="relative inline-block pr-8 before:absolute before:right-3 before:top-1/2 before:-translate-y-1/2 before:text-gray-300 before:content-['/'] last:pr-0 last-of-type:before:hidden"
         >
           <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800" href="/services"> Services</a>
         </li>
         <li
-          class="inline-block relative pr-8 last:pr-0 last-of-type:before:hidden before:absolute before:top-1/2 before:right-3 before:-translate-y-1/2 before:content-['/'] before:text-gray-300"
+          class="relative inline-block pr-8 before:absolute before:right-3 before:top-1/2 before:-translate-y-1/2 before:text-gray-300 before:content-['/'] last:pr-0 last-of-type:before:hidden"
         >
           <a class="inline-flex gap-x-2 text-sm text-gray-500 hover:text-gray-800" href="/contact"> Contact</a>
         </li>
@@ -34,9 +34,9 @@ import logo from "../assets/logo.svg";
       <!-- End Col -->
 
       <!-- Social Brands -->
-      <div class="md:text-center space-x-2">
+      <div class="space-x-2 md:text-center">
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
+          class="inline-flex h-8 w-8 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white"
           href="#"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
@@ -44,7 +44,7 @@ import logo from "../assets/logo.svg";
           </svg>
         </a>
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
+          class="inline-flex h-8 w-8 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white"
           href="#"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
@@ -54,7 +54,7 @@ import logo from "../assets/logo.svg";
           </svg>
         </a>
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
+          class="inline-flex h-8 w-8 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white"
           href="#"
         >
           <svg xmlns="http://www.w3.org/2000/svg" class="h-3.5 w-3.5" fill="currentColor" viewBox="0 0 24 24">
@@ -64,10 +64,10 @@ import logo from "../assets/logo.svg";
           </svg>
         </a>
         <a
-          class="inline-flex justify-center items-center w-8 h-8 text-center text-gray-500 hover:bg-gray-100 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition"
+          class="inline-flex h-8 w-8 items-center justify-center rounded-full text-center text-gray-500 transition hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white"
           href="#"
         >
-          <svg class="w-3.5 h-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+          <svg class="h-3.5 w-3.5" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
             <path
               d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z"
             ></path>
