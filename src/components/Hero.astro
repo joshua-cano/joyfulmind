@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import heroImage from "../assets/gad.jpg";
 ---
 
@@ -45,7 +45,7 @@ import heroImage from "../assets/gad.jpg";
     <!-- End Col -->
 
     <div class="relative ml-4 mt-8 md:mt-0">
-      <Image loading="eager" class="w-full rounded-md" src={heroImage} alt="Image Description" format="jpg" />
+      <Picture class="w-full rounded-md" src={heroImage} formats={["webp", "jpeg"]} alt="Hero Image of Dr Gad Makar" loading="eager" />
       <div
         class="absolute inset-0 -z-[1] -mb-4 -ml-4 mr-4 mt-4 h-full w-full rounded-md bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 lg:-mb-6 lg:-ml-6 lg:mr-6 lg:mt-6"
       >
