@@ -1,23 +1,23 @@
 ---
 import { Image } from "astro:assets";
-import logo from "../assets/logo.svg";
+import logo from "../assets/logo_transparent.png";
 
 const url = Astro.url.pathname;
 console.log(url);
 ---
 
 <header
-  class="bg-white-100 z-50 flex w-full flex-wrap border-b border-gray-200 bg-white bg-opacity-95 py-6 text-sm backdrop-blur-lg backdrop-filter sm:flex-nowrap sm:justify-start"
+  class="bg-white-100 z-50 flex w-full flex-wrap border-b border-gray-200 bg-white bg-opacity-95 py-2 text-sm backdrop-blur-lg backdrop-filter sm:flex-nowrap sm:justify-start"
 >
   <nav class="mx-auto w-full max-w-[85rem] px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
     <div class="flex items-center justify-between">
       <a class="inline-flex items-center gap-x-1 text-xl font-semibold sm:text-2xl" href="/">
-        <Image class="h-auto w-40 sm:w-44" src={logo} alt="Logo" />
+        <Image class="h-auto w-32 sm:w-36" src={logo} alt="Logo" />
       </a>
       <div class="sm:hidden">
         <button
           type="button"
-          class="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-md border bg-white p-2 align-middle text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:ring-offset-2 focus:ring-offset-white"
+          class="hs-collapse-toggle inline-flex items-center justify-center gap-2 rounded-md border bg-white p-2 align-middle text-sm font-medium text-gray-700 shadow-sm transition-all hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-[#543BC4] focus:ring-offset-2 focus:ring-offset-white"
           data-hs-collapse="#navbar-image-and-text-2"
           aria-controls="navbar-image-and-text-2"
           aria-label="Toggle navigation"
