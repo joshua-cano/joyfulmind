@@ -8,9 +8,9 @@ const url = Astro.url.pathname;
 <header
   class="bg-white-100 z-50 flex w-full flex-wrap border-b border-gray-200 bg-white bg-opacity-95 py-6 text-sm backdrop-blur-lg backdrop-filter sm:flex-nowrap sm:justify-start"
 >
-  <nav class="mx-auto w-full max-w-[85rem] px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-6" aria-label="Global">
+  <nav id="navbar" class="mx-auto w-full max-w-[85rem] px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-6" aria-label="Global">
     <div class="flex items-center justify-between gap-2">
-      <a class="inline-flex items-center gap-x-1 text-xl font-semibold sm:text-2xl" href="/">
+      <a id="logo" class="inline-flex items-center gap-x-1 text-xl font-semibold sm:text-2xl transition-all duration-300" href="/">
         <Image class="h-auto w-72" src={hlogo} alt="Logo" />
       </a>
       <div class="sm:hidden">
@@ -51,3 +51,18 @@ const url = Astro.url.pathname;
     font-weight: bold;
   }
 </style>
+
+<script>
+    window.addEventListener('scroll', function () {
+      const navbar = document.getElementById('navbar');
+      const logo = document.getElementById('logo');
+      
+      if (window.scrollY > 50) {
+        logo?.classList.add('w-52');
+        logo?.classList.remove('w-72');
+      } else {
+        logo?.classList.remove('w-52');
+        logo?.classList.add('w-72');
+      }
+    });
+</script>
